@@ -3,8 +3,9 @@
   
   <head>
     <meta charset="UTF-8">
-    <title>UMD Diversity Survey</title>> 
+    <title>UMD Diversity Survey</title> 
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
   
   <body>
@@ -41,46 +42,47 @@
     <fieldset>
         <legend>How would you rate UMD's representation of diverse backgrounds and identities?</legend>
         <label for="poor">
+            <input class="inline" id="poor" type="radio" name="diversity-rating" value="1"/>
             Poor
-            <input id="poor" type="radio" name="diversity-rating" value="1"/>
         </label>
         <label for="fair">
+            <input class="inline" id="fair" type="radio" name="diversity-rating" value="2"/>
             Fair
-            <input id="fair" type="radio" name="diversity-rating" value="2"/>
         </label>
         <label for="good">
+            <input class="inline" id="good" type="radio" name="diversity-rating" value="3"/>
             Good
-            <input id="good" type="radio" name="diversity-rating" value="3"/>
         </label>
         <label for="excellent">
+            <input class="inline" id="excellent" type="radio" name="diversity-rating" value="4"/>
             Excellent
-            <input id="excellent" type="radio" name="diversity-rating" value="4"/>
         </label>
 
-        <p>What would you like to see improved? (Check all that apply)</p>
+        <legend>What would you like to see improved? (Check all that apply)</legend>
+        <hr>
         <label for="scholarships">
-            <input id="scholarships" name="scholarships" type="checkbox" value="scholarships" required/>
+            <input class="inline" id="scholarships" name="scholarships" type="checkbox" value="scholarships" required/>
             Provide targeted scholarships and financial aid packages
         </label>
         <label for="curriculum">
-            <input id="curriculum" name="curriculum" type="checkbox" value="curriculum" required/>
+            <input class="inline" id="curriculum" name="curriculum" type="checkbox" value="curriculum" required/>
             Implement a more inclusive curriculum
         </label>
         <label for="programs">
-            <input id="programs" name="programs" type="checkbox" value="programs" required/>
+            <input class="inline" id="programs" name="programs" type="checkbox" value="programs" required/>
             Add support groups and programs
         </label>
         <label for="safe-space">
-            <input id="safe-space" name="safe-space" type="checkbox" value="safe-space" required/>
+            <input class="inline" id="safe-space" name="safe-space" type="checkbox" value="safe-space" required/>
             Build a safe space for all students
         </label>
-
+    </fieldset>
+    <fieldset>
         <label for="comments">
             Any comments or suggestions?
             <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
         </label>
     </fieldset>
-
     <input type="submit" id="submit" value="Submit" />
   </form>
 
